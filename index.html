@@ -11,31 +11,71 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/5781828a69.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     </head>
     <body>
-        <nav class="sidebar">
-            <div class="profile">
-                <img src="img/profil.jpg" alt="Ma photo de profil" class="profile-picture">
-                <p class="name">Melvyn Hanicq</p>
-                <div class="profile-info">
-                    <p>Etudiant en 5ème année à l'UPJV</p>
-                    <p>Est en formation Master MIAGE (2ème année)</p>
-                    <p>En alternance chez RDO Springs depuis 1 an et 9 mois</p>
+        <div class="container">
+            <nav class="sidebar">
+                <div class="profile">
+                    <img src="img/profil.jpg" alt="Ma photo de profil" class="profile-picture">
+                    <p class="name">Melvyn Hanicq</p>
+                    <div class="profile-info">
+                        <p>Etudiant en 5ème année à l'UPJV</p>
+                        <p>Est en formation Master MIAGE (2ème année)</p>
+                        <p>En alternance chez RDO Springs depuis 1 an et 9 mois</p>
+                    </div>
                 </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Mes compétences personnelles</a></li>
-                <li><a href="#">Mes compétences techniques</a></li>
-                <li><a href="#">Mes projets</a></li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/melvyn-hanicq-512a50228" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Meuhlvyn" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <footer>
-                <p>© 2024 - Melvyn Hanicq</p>
-            </footer>
-        </nav>
+                <ul class="nav-links">
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Mes compétences personnelles</a></li>
+                    <li><a href="#">Mes compétences techniques</a></li>
+                    <li><a href="#">Mes expériences</a></li>
+                </ul>
+                <footer>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/melvyn-hanicq-512a50228" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Meuhlvyn" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p>© 2024 - Melvyn Hanicq</p>
+                </footer>
+            </nav>
+            <main>
+                <div class="intro" id="typed-strings">
+                    <div class="overlay"></div>
+                    <p class="intro-titre">Bonjour ! Je m'appelle <b>Melvyn HANICQ</b>.</p>
+                    <p class="intro-description">
+                        Ce site one-page est destiné à présenter et prouver mes compétences sous la forme d'un portefeuille.
+                        Vous y trouverez des informations sur mes compétences personnelles et techniques, ainsi que mes expériences présentées 
+                        sous la forme de divers projets que j'ai pû effectuer durant mon cursus universitaire et mes stages professionnels.
+                    </p>
+                </div>
+                <h2><span id="typed"></span></h2>
+                <div class="perso">
+                    <h1>Mes compétences personnelles</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="tech">
+                    <h1>Mes compétences techniques</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="xp">
+                    <h1>Mes expériences</h1>
+                    <p>
+                        
+                    </p>
+                </div>
+            </main>
+        </div>
     </body>
+    <!--<script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 200,
+            backSpeed: 35,
+          });
+        </script>-->
 </html>
