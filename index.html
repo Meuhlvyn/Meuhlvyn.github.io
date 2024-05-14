@@ -26,10 +26,10 @@
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">Mes compétences personnelles</a></li>
-                    <li><a href="#">Mes compétences techniques</a></li>
-                    <li><a href="#">Mes expériences</a></li>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#perso">Mes compétences personnelles</a></li>
+                    <li><a href="#tech">Mes compétences techniques</a></li>
+                    <li><a href="#xp">Mes expériences</a></li>
                 </ul>
                 <footer>
                     <div class="social-icons">
@@ -40,7 +40,7 @@
                 </footer>
             </nav>
             <main>
-                <div class="intro" id="typed-strings">
+                <div class="intro" id="intro">
                     <div class="overlay"></div>
                     <p class="intro-titre">Bonjour ! Je m'appelle <b>Melvyn HANICQ</b>.</p>
                     <p class="intro-description">
@@ -49,20 +49,38 @@
                         sous la forme de divers projets que j'ai pû effectuer durant mon cursus universitaire et mes stages professionnels.
                     </p>
                 </div>
-                <h2><span id="typed"></span></h2>
-                <div class="perso">
+                <div class="perso" id="perso">
                     <h1>Mes compétences personnelles</h1>
-                    <p>
-                        
+                    <p class="perso-description">
+
                     </p>
+                    <div class="perso-competence">
+                        <h4 class="perso-competence-titre"></h4>
+                        <p class="perso-competence-description">
+
+                        </p>
+                        <div class="vertical-line"></div>
+                        <div class="perso-competence-xp">
+                            <h6 class="perso-competence-xp-titre"></h6>
+                            <p class="perso-competence-xp-description">
+
+                            </p>
+                            <button>
+                                
+                            </button>
+                        </div>
+                    </div>
+                    <div class="perso-competence">
+
+                    </div>
                 </div>
-                <div class="tech">
+                <div class="tech" id="tech">
                     <h1>Mes compétences techniques</h1>
                     <p>
                         
                     </p>
                 </div>
-                <div class="xp">
+                <div class="xp" id="xp">
                     <h1>Mes expériences</h1>
                     <p>
                         
@@ -70,12 +88,18 @@
                 </div>
             </main>
         </div>
+        <script>
+            var navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var targetId = link.getAttribute('href').substring(1);
+                    var targetSection = document.getElementById(targetId);
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
-    <!--<script>
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 200,
-            backSpeed: 35,
-          });
-        </script>-->
 </html>

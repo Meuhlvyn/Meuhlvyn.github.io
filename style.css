@@ -105,45 +105,6 @@ footer p {
     font-size: 12px;
 }
 
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 150px;
-    }
-
-    .profile {
-        margin-bottom: 0;
-    }
-
-    .profile-picture {
-        width: 100px;
-        height: 100px;
-    }
-
-    .name {
-        font-size: 14px;
-    }
-
-    .profile-info p {
-        font-size: 12px;
-    }
-
-    .nav-links li {
-        font-size: 14px;
-    }
-
-    .social-icons a {
-        font-size: 18px;
-    }
-
-    .intro-titre {
-        font-size: 20px;
-    }
-    
-    .intro-description {
-        font-size: 10px;
-    }
-}
-
 main {
     flex: 1;
     overflow-y: auto;
@@ -193,4 +154,48 @@ main {
 
 .xp {
     height: 100vh;
+}
+
+.vertical-line {
+    border-left: 1px solid black;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .profile {
+        margin-bottom: 0;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 14px;
+    }
+
+    .profile-info p {
+        font-size: 12px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    .intro-titre {
+        font-size: 20px;
+    }
+    
+    .intro-description {
+        font-size: 10px;
+    }
 }
