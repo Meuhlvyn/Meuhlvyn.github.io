@@ -146,6 +146,39 @@ main {
 
 .perso {
     height: 100vh;
+    background-color: #e5e5e5;
+}
+
+.perso h1 {
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.perso-description {
+    margin : 30px;
+}
+
+.perso-competence {
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin : 50px 30px;
+    padding : 20px;
+}
+
+.perso-competence-contenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.perso-competence-description {
+    display: block;
+    flex: 1;
+}
+
+.perso-competence-xp {
+    display: block;
+    flex: 1;
 }
 
 .tech {
@@ -157,8 +190,10 @@ main {
 }
 
 .vertical-line {
+    display: block;
+    align-self: stretch;
     border-left: 1px solid black;
-    height: 100px;
+    margin : 0 30px;
 }
 
 @media screen and (max-width: 768px) {
