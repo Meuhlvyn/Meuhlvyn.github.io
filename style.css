@@ -198,6 +198,11 @@ button{
 
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
 button:hover {
     background-color: #e9e9e9;
 }
@@ -259,11 +264,55 @@ button:hover {
     margin : 30px;
 }
 
+.xp {
+    margin : 30px;
+    padding : 20px;
+}
+
+.xp-contenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.xp-description {
+    display: block;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.xp-picture {
+    display: block;
+    max-width: 800px;
+    max-height: 400px;
+    margin: 0 10px;
+}
+
 .vertical-line {
     display: block;
     align-self: stretch;
     border-left: 1px solid black;
     margin : 0 30px;
+}
+
+.download {
+    font-size: 12px;
+}
+
+.download a {
+    color: #92addd;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.download a:hover {
+    color: #e9e9e9;
+}
+
+hr {
+    border: 1px thin #333;
+    margin: 30px;
 }
 
 @media screen and (max-width: 768px) {
