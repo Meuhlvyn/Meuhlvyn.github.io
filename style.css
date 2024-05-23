@@ -4,6 +4,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #92addd;
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -21,6 +32,10 @@ body {
     padding: 20px;
     top: 0;
     left: 0;
+}
+
+.sidebar.visible {
+    display: flex;
 }
 
 .sidebar::-webkit-scrollbar { 
@@ -297,6 +312,13 @@ button:hover {
     margin : 0 30px;
 }
 
+.horizontal-line {
+    display: none;
+    width: 100%;
+    border-top: 1px solid black;
+    margin : 30px 0;
+}
+
 .download {
     font-size: 12px;
 }
@@ -316,9 +338,44 @@ hr {
     margin: 30px;
 }
 
+.menurapide {
+    margin: 0 30px;
+}
+
+.menurapide-liens {
+    list-style-type: none;
+}
+
+.menurapide-liens li {
+    margin-bottom: 3px;
+}
+
+.menurapide-liens a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.5s ease;
+}
+
+.menurapide-liens a:hover {
+    color: #cfcfcf;
+    transform: translateX(10px);
+    transition: transform 0.5s ease;
+}
+
 @media screen and (max-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
     .sidebar {
+        display: none;
         width: 150px;
+        top: 30px;
+    }
+
+    main {
+        top: 30px;
     }
 
     .profile {
@@ -351,6 +408,32 @@ hr {
     }
     
     .intro-description {
-        font-size: 10px;
+        font-size: 14px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .horizontal-line {
+        display: block;
+    }
+
+    .tech-competence-contenu {
+        flex-direction: column;
+    }
+
+    .perso-competence-contenu {
+        flex-direction: column;
+    }
+
+    .xp-contenu {
+        flex-direction: column;
+    }
+
+    .xp-picture {
+        max-width: 300px;
+        max-height: 200px;
+        margin: 10px 0;
     }
 }
